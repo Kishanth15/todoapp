@@ -1,0 +1,198 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+:root{
+  --primary: #1a202f;
+}
+
+body{
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root{
+  width: 100%;
+  min-height: 100vh;
+}
+
+section{
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+  background: var(--primary);
+}
+
+.todo{
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  gap: 30px;
+}
+
+.todo .part1{
+  width: 35%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.todo .part2{
+  width: 65%;
+  min-height: 80vh;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid rgb(118, 118, 118);
+}
+
+.part1 form{
+  width: 75%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: #151d2c;
+  border-radius: 20px;
+  border: 1.5px solid rgb(115, 115, 115);
+}
+
+.part1 form h1{
+  margin-bottom: 10px;
+  color: #fff700;
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+    font-size: 40px;
+}
+.part1 form input{
+  width: 80%;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: #172034;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.part1 form input ::placeholder{
+  color: #172034;
+}
+.part1 form textarea{
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #172034;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.part1 form textarea{
+  height: 180px;
+  resize: none;
+}
+.part1 form button:active
+{
+  transform: scale(0.9);
+}
+.part1 form button{
+  width: 80%;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: #fff700;
+  color: rgb(14, 18, 34);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.2s;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+}
+
+
+
+.todo-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+}
+
+.todo-container .item{
+  width: 100%;
+  min-height: 10vh;
+  background: var(--primary);
+  padding: 20px;
+  border-radius: 10px;
+  border: gray 1px solid;
+  transition: 0.2s;
+}
+
+.todo-container .item:hover{
+  background: #1e2d4a;
+}
+
+.todo-container .item h2{
+  color: #fff700;
+  margin-bottom: 8px;
+}
+
+.todo-container .item p{
+  margin-bottom: 12px;
+}
+
+.todo-container .item button{
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: 0.2s;
+}
+
+.todo-container .item button:active{
+  transform: scale(0.8);
+}
+
+.todo-container .item .b1{
+  background: #28a745;
+  color: #fff;
+}
+
+
+
+.todo-container .item .b2{
+  background: #dc3545;
+  color: #fff;
+}
+
+.item strike{
+  color: #fff702;
+  text-decoration: line-through;
+
+}
+.completed{
+  opacity: 0.5;
+}
